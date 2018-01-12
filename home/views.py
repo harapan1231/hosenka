@@ -6,9 +6,9 @@ from django.template import loader
 
 
 def index(request):
-    template = loader.get_template('menu/index.html')
+    template = loader.get_template('home/index.html')
     context = {
-        'title': 'Menu',
+        'title': 'Home',
     }
     return HttpResponse(template.render(context, request))
 

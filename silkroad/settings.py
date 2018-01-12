@@ -31,11 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'signin.apps.SigninConfig',
-    'menu.apps.MenuConfig',
+    'home.apps.HomeConfig',
     'search.apps.SearchConfig',
     'update.apps.UpdateConfig',
     'tally.apps.TallyConfig',
+    'signin.apps.SigninConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
