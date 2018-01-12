@@ -22,5 +22,6 @@ urlpatterns = [
     path('update/', include('update.urls')),
     path('tally/', include('tally.urls')),
     path('signin/', include('signin.urls')),
+    path('information/', include('information.urls')),
     path('admin/', admin.site.urls),
 ]

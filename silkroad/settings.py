@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'update.apps.UpdateConfig',
     'tally.apps.TallyConfig',
     'signin.apps.SigninConfig',
+    'information.apps.InformationConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
