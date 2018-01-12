@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'menu.apps.MenuConfig',
     'search.apps.SearchConfig',
     'update.apps.UpdateConfig',
+    'tally.apps.TallyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
