@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Silk Road</title>
+    <link rel="icon" href="{% static "images/favicon.svg" %}">
 
-    <link href="https://unpkg.com/picnic" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
 </head>
-<body>
-    Welcome, Silk Road !!    
+<body class="container">
+    <header class="navbar">
+        <nav>
+            <h3>Silk Road</h3>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <img src="{% static "images/servicelogo.png" %}" alt="Service">
+    </footer>
 </body>
 </html>
