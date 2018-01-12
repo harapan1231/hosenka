@@ -2,6 +2,13 @@
 
 {% block content %}
 <h3>{{ title }}</h3>
-Hello, world.
+
+<div class="form-group">
+    <label class="form-label" for="uid">Your ID: </label>
+    <input id="uid" class="form-input" type="textbox">
+    <label class="form-label" for="pwd">Password: </label>
+    <input id="pwd" class="form-input" type="textbox">
+</div>
+<button class="btn btn-primary float-right circle">Sign in</button>
 {% endblock %}
 
