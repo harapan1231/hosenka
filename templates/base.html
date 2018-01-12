@@ -9,18 +9,49 @@
     <link rel="icon" href="{% static "images/favicon.svg" %}">
 
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="{% static "css/spectre-docs.css" %}">
 </head>
-<body class="container">
-    <header class="navbar">
-        <nav>
-            <h3>Silk Road</h3>
-        </nav>
-    </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-    <footer>
-        <img src="{% static "images/servicelogo.png" %}" alt="Service">
-    </footer>
+<body>
+    <div class="docs-container off-canvas off-canvas-sidebar-show">
+        <div class="docs-navbar">
+            <img src="{% static "images/servicelogo.png" %}" alt="Service">
+        </div>
+        <div class="docs-sidebar off-canvas-sidebar">
+            <div class="docs-brand">
+                <a href="/" class="docs-logo">
+                    <img src="{% static "images/servicelogo.png" %}" alt="Service">
+                    <h2>Silk Road</h2>
+                </a>
+            </div>
+            <div class="docs-nav">
+                <div class="accordion-container">
+                    <div class="accordion">
+                        <input id="docs-accordion-checkbox-menu" type="checkbox" name="docs-accordion-checkbox" hidden checked>
+                        <label class="accordion-header c-hand" for="docs-accordion-checkbox-menu">
+                            Menu
+                        </label>
+                        <div class="accordion-body">
+                            <ul class="menu menu-nav">
+                                <li class="menu-item"><a href="/signin">Sign-in</a></li>
+                                <li class="menu-item"><a href="/menu">Menu</a></li>
+                                <li class="menu-item"><a href="/search">Search</a></li>
+                                <li class="menu-item"><a href="/update">Update</a></li>
+                                <li class="menu-item"><a href="/tally">Tally</a></li>
+                                <hr>
+                                <li class="menu-item"	><a href="/admin">Admin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="docs-content off-canvas-content">
+            <div class="container">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
 </body>
 </html>
