@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'signin.apps.SigninConfig',
     'menu.apps.MenuConfig',
     'search.apps.SearchConfig',
+    'update.apps.UpdateConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
