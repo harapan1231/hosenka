@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'loaders.apps.LoadersConfig',
     'signin.apps.SigninConfig',
     'menu.apps.MenuConfig',
+    'search.apps.SearchConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
