@@ -8,7 +8,7 @@ from django.template import loader
 def index(request):
     template = loader.get_template('signin/index.html')
     context = {
-        'title': 'Sign-in',
+        'title': 'Sign in',
     }
     return HttpResponse(template.render(context, request))
 
