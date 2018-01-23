@@ -4,7 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
 
-from .models import Ret
+from .models import SearchResult
 
 def index(request):
     template = loader.get_template('fees/index.html')
@@ -18,7 +18,7 @@ def search(request):
     template = loader.get_template('fees/search.html')
     context = {
         'title': 'Search',
-        'ret': Ret.objects.all(),
+        'ret': SearchResult.objects.all(),
     }
     return HttpResponse(template.render(context, request))
 
