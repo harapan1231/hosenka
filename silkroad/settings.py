@@ -33,8 +33,6 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
-    'search.apps.SearchConfig',
-    'update.apps.UpdateConfig',
     'fees.apps.FeesConfig',
     'signin.apps.SigninConfig',
     'information.apps.InformationConfig',
