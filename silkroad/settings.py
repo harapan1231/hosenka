@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'search.apps.SearchConfig',
     'update.apps.UpdateConfig',
-    'tally.apps.TallyConfig',
+    'total.apps.TotalConfig',
     'signin.apps.SigninConfig',
     'information.apps.InformationConfig',
     'django.contrib.admin',

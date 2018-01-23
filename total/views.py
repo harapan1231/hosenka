@@ -6,9 +6,9 @@ from django.template import loader
 
 
 def index(request):
-    template = loader.get_template('tally/index.html')
+    template = loader.get_template('total/index.html')
     context = {
-        'title': 'Tally',
+        'title': 'Total',
     }
     return HttpResponse(template.render(context, request))
 
