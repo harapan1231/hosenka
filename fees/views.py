@@ -6,7 +6,10 @@ from django.template import loader
 
 
 def index(request):
-    template = loader.get_template('total/index.html')
+    return HttpResponse("Hello, world.")
+
+def total(request):
+    template = loader.get_template('fees/total.html')
     context = {
         'title': 'Total',
     }
