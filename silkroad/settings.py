@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'home.apps.HomeConfig',
     'fees.apps.FeesConfig',
     'signin.apps.SigninConfig',
     'information.apps.InformationConfig',
