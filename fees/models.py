@@ -9,5 +9,5 @@ class SearchResult(models.Model):
 class Totaling(models.Model):
     ins_id = models.CharField(max_length=12)
     history = models.IntegerField
-    amount_fee = models.DecimalField(max_digits=8, decimal_places=0)
+    amount_fees = models.DecimalField(max_digits=8, decimal_places=0)
 
