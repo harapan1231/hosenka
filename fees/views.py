@@ -8,10 +8,7 @@ from .models import SearchResult
 
 def index(request):
     template = loader.get_template('fees/index.html')
-    context = {
-        'title': 'Home',
-        'ret': Ret.objects.all(),
-    }
+    context = {}
     return HttpResponse(template.render(context, request))
 
 def search(request):
