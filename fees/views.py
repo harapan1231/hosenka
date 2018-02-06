@@ -11,7 +11,7 @@ def index(request):
     context = {}
     return HttpResponse(template.render(context, request))
 
-def search(request):
+def search_init(request):
     template = loader.get_template('fees/search.html')
     context = {
         'title': 'Search',
@@ -19,14 +19,14 @@ def search(request):
     }
     return HttpResponse(template.render(context, request))
 
-def update(request):
+def update_init(request):
     template = loader.get_template('fees/update.html')
     context = {
         'title': 'Update',
     }
     return HttpResponse(template.render(context, request))
 
-def total(request):
+def total_init(request):
     template = loader.get_template('fees/total.html')
     context = {
         'title': 'Total',
