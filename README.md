@@ -32,7 +32,9 @@ All we have to do is to make 2 kinds of files:
 1. Activate a Python venv
 
     ```
-    source bin/activate
+    source bin/activate.fish # if bash
+    # or
+    source bin/activate.fish # if fish
     ```
 
 1. (ref) Deacticate
