@@ -25,8 +25,8 @@ All we have to do is to make 2 kinds of files:
     ```
     mkdir ~/.env
     cd ~/.env
-    python3.6 -m venv python-3.6
-    cd python-3.6
+    python3.6 -m venv python3.6
+    cd python3.6
     ```
 
 1. Activate a Python venv
